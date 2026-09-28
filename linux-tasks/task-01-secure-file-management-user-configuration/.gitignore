@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Do NOT ignore evidence or submission files - they are required deliverables
+!evidence/screenshots/*
+!evidence/terminal-output/*
+!submission/*

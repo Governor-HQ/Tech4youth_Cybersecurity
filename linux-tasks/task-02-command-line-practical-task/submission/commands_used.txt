@@ -1,0 +1,64 @@
+1  sudo useradd -m -s /bin/bash student01
+2  sudo passwd student01
+3  su - student01
+4  whoami
+5  mkdir ~/project
+6  ls -la ~
+7  mkdir ~/project/docs ~/project/scripts ~/project/bin
+8  ls -la ~/project
+9  cd ~/project/docs
+10 echo "This is the initial report by student01." > report.txt
+11 ls -la
+12 echo "Top Secret." > .secret.txt
+13 cat .secret.txt
+14 nano report.txt
+15 cat report.txt
+16 ls -la ~
+17 rm ~/report.txt
+18 pwd
+19 cp report.txt ~/project/scripts/
+20 ls -la ~/project/scripts
+21 cat ~/project/scripts/report.txt
+22 mv .secret.txt ~/project/bin/classified.txt
+23 ls -la ~/project/docs
+24 ls -la ~/project/bin
+25 cat ~/project/bin/classified.txt
+26 cd ~/project/scripts
+27 nano install.sh
+28 cat install.sh
+29 ls -l install.sh
+30 chmod 775 install.sh
+31 ls -l install.sh
+32 cd ~/project/bin
+33 ls -l
+34 chmod 660 classified.txt
+35 ls -l
+36 cd ~/project/docs
+37 touch admin_notes.txt
+38 ls -l
+39 chmod 644 admin_notes.txt
+40 chmod 600 admin_notes.txt
+41 ls -l
+42 rm admin_notes.txt
+43 ls -la
+44 cd ~/project
+45 cp -r ~/project/docs ~/project/scripts ~/project/backup/
+46 ls -la ~/project/backup
+47 ls -la ~/project/backup/docs
+48 cd ~
+49 sudo apt install tree
+50 sudo usermod -aG student01
+51 su governor
+52 sudo usermod -aG student01
+53 sudo usermod -aG sudo student01
+54 exit
+55 exit
+56 su - student01
+57 groups
+58 sudo apt install tree
+59 tree project
+60 ls -la
+61 tree -p project
+62 tree -a project
+63 tree -apug project
+64 history

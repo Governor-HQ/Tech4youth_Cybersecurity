@@ -1,0 +1,46 @@
+    1  whoami
+    2  mkdir -p ~/mission/intel ~/mission/ops/backup
+    3  ls -la ~/mission
+    4  ls -la ~/mission/ops
+    5  touch ~/mission/intel/targets.txt ~/mission/intel/routes.txt ~/mission/intel/keys.txt
+    6  ls -la ~/mission/intel
+    7  cd ~/mission/intel
+    8  ls >listing1.txt
+    9  ls -l >listing2.txt
+   10  ls -la > listing3.txt
+   11  ls -la
+   12  cat listing1.txt
+   13  cat listing2.txt
+   14  cat listing3.txt
+   15  cp routes.txt ~/mission/ops/backup/
+   16  rm keys.txt
+   17  ls -la ~mission/intel
+   18  ls -la ~/mission/ops/backup
+   19  ls -la ~/mission/intel
+   20  chmod 640 targets.txt
+   21  ls -l targets.txt
+   22  rm ~/mission/ops/backups/routes.txt
+   23  rm ~/mission/ops/backup/routes.txt
+   24  ls -la ~/mission/ops/backup
+   25  cp ~/mission/intel/routes.txt ~/mission/ops/backup/
+   26  ls -la ~/mission/ops/backup
+   27  whoami
+   28  pwd
+   29  sudo chown root targets.txt
+   30  ls -l targets.txt
+   31  cat targets.txt
+   32  echo "test" >>targets.txt
+   33  history
+   34  history > ~/mission/command-history.txt
+   35  sudo usermod -aG vboxsf agent007
+   36  exit
+   37  su - agent007
+   38  whoami
+   39  cp ~/mission/command-history.txt ~/mission/final-output.txt ~/mission/explanation.txt /media/sf_kali-linux-share/
+   40  ls -la /media/sf_kali-linux-share/
+
+Note: the two commands run as governor prior to switching into agent007
+are not captured above, since bash history is per-session:
+
+sudo useradd -m -s /bin/bash -G sudo agent007
+sudo passwd agent007

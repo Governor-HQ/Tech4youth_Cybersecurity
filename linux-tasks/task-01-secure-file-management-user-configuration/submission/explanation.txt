@@ -1,0 +1,10 @@
+chmod means change mode. It is a command used to change the permission mode
+of files between owner, group, and others, it determines who can read, write,
+and execute a file. useradd is a low-level command for creating a new user
+account; unlike adduser, which automatically creates a home directory and
+prompts for a password, useradd requires you to manually specify these with
+flags, for example -m to create a home directory, -s to set the shell, and
+-G to add the user to a group. ls -l combines two things: ls lists the
+contents of a directory, while -l tells it to show more detail about each
+item, like permissions, owner, group, size, and date, rather than just the
+filename.
